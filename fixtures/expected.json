@@ -1,6 +1,51 @@
 {
-  "accepted_source_rows": [2, 4, 8],
-  "rejected_source_rows": [3, 5, 6, 7, 9, 10],
-  "net_revenue_cents": 2750,
-  "return_rows": 1
+  "accepted_source_rows": [
+    2,
+    4,
+    8,
+    13,
+    22
+  ],
+  "rejected_source_rows": [
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24
+  ],
+  "net_revenue_cents": 2850,
+  "return_rows": 1,
+  "rejection_reasons": {
+    "3": "duplicate_accepted_key",
+    "5": "invalid_date",
+    "6": "invalid_quantity",
+    "7": "invalid_unit_cents",
+    "9": "invalid_quantity",
+    "10": "missing_order_id",
+    "11": "field_width",
+    "12": "field_width",
+    "14": "invalid_line_number",
+    "15": "invalid_line_number",
+    "16": "invalid_field_count",
+    "17": "quoted_record",
+    "18": "invalid_field_count",
+    "19": "oversized_record",
+    "20": "field_width",
+    "21": "invalid_quantity",
+    "23": "duplicate_accepted_key",
+    "24": "field_width"
+  }
 }
