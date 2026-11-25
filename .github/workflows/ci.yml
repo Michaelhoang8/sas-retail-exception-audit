@@ -1,0 +1,14 @@
+name: Fixture contract (SAS runtime required)
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Independent fixture contract (not native SAS execution)
+        run: python tests/verify_fixture.py
